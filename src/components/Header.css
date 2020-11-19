@@ -1,0 +1,24 @@
+.Header {
+    text-align: center;
+    background-color:#af2937;
+    width: 100%;
+    height: auto;
+}
+
+.QuestLogo {
+    width: 30%;
+}
+
+.HeaderText {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.HeaderTextTWIQ {
+    color: white;
+}
+
+.TWIQHeaderInternal {
+    padding: 25px;
+}
