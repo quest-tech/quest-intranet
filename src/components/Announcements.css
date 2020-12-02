@@ -1,0 +1,16 @@
+.justify-content-center {
+    margin: 10px;
+}
+
+.myClass {
+    color: black;
+}
+
+.active {
+    background-color: #660909!important;
+}
+
+.myClass:hover {
+    background-color: #660909;
+    color: white;
+}
