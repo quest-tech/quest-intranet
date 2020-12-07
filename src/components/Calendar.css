@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+
+#calendarDiv {
+    margin: 50px;
+}
+
+
+#wrapper {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
