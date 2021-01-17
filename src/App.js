@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

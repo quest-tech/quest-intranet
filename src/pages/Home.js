@@ -1,36 +1,45 @@
-import React from 'react';
-import QuestLogo from '../assets/QuestLogo.png';
-import ImageButton from '../components/ImageButton';
-// Must install these dependecies
-// npm i -S react-simple-flex-grid or yarn add react-simple-flex-grid
-import { Row, Col } from 'react-simple-flex-grid';
-import "react-simple-flex-grid/lib/main.css";
+import {
+    Row,
+    Col,
+    Container,
+} from 'react-bootstrap';
 
-// Can also use bootstrap grid
+import React from 'react';
+import ImageButton from '../components/ImageButton';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home() {
-    return (
-        <div className='home'>
-            <Row gutter={500} justify='start'>
-                <Col span={2}>
-                    <ImageButton image={QuestLogo} link='test1'></ImageButton>
-                    <ImageButton image={QuestLogo} link='test2'></ImageButton>
-                </Col>
-                <Col span={2}>
-                    <ImageButton image={QuestLogo} link='test3'></ImageButton>
-                    <ImageButton image={QuestLogo} link='test4'></ImageButton>
-                </Col>
-                <Col span={2}>
-                    <ImageButton image={QuestLogo} link='test5'></ImageButton>
-                    <ImageButton image={QuestLogo} link='test6'></ImageButton>
-                </Col>
-            </Row>
-    
-            
-
-        </div>
-
+    return(
+            <Container style={{alignContent: 'center', justifyContent: "center"}}>
+                <Row  xs={2} md={4} lg={5} className="text-center" style={{padding: '10px'}}>
+                    <Col > 
+                        <ImageButton link='rec1'/> 
+                    </Col>
+                    <Col > 
+                        <ImageButton link='rec2'/> 
+                    </Col>
+                </Row>
+                <Row  xs={2} md={4} lg={5} className="text-center" style={{padding: '10px'}}>
+                    <Col > 
+                        <ImageButton link='rec3'/> 
+                    </Col>
+                    <Col > 
+                        <ImageButton link='rec4'/> 
+                    </Col>
+                </Row>
+                <Row  xs={2} md={4} lg={5} className="text-center" style={{padding: '10px'}}> 
+                    <Col > 
+                        <ImageButton link='rec5'/> 
+                    </Col>
+                    <Col > 
+                        <ImageButton link='rec6'/> 
+                    </Col>
+                </Row>
+            </Container>
     )
 }
 
-export default Home
+export default Home;
+
+
+
